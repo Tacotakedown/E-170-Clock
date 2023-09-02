@@ -1,0 +1,25 @@
+.wrapper {
+	max-width: 50%;
+	font-family: 'MyriadPro-Regular';
+	letter-spacing: -3px;
+}
+.font {
+	font-family: 'MyriadPro-Regular';
+	color: white;
+}
+.rst {
+	position: absolute;
+	z-index: 999;
+	left: 100px;
+	top: 130px;
+	font-size: 3vh;
+}
+.clock {
+	font-family: 'clock';
+}
+.chrButton:active {
+	stroke: red;
+}
+.RegularFont {
+	font-family: 'clockRegular';
+}
