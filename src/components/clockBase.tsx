@@ -66,150 +66,151 @@ export const ClockBase: React.FC<clockBaseProps> = (props) => {
 					stroke="#231f20"
 					strokeMiterlimit={10}
 				/>
-				<text transform="translate(211.74 66.19)" fill="#fff" fontSize={30}>
-					<tspan x="0" y="0">
-						CHR
-					</tspan>
+				<text
+					className="regularSpacing"
+					transform="translate(211.74 66.19)"
+					fill="#fff"
+					fontSize={30}
+				>
+					CHR
 				</text>
 				<text
 					transform="translate(209.87 194.26)"
 					fill="#fff"
 					fontSize={30}
+					className="regularSpacing"
 				>
-					<tspan x="0" y="0">
-						U
-					</tspan>
-					<tspan x="19.93" y="0" letterSpacing=".02em">
-						T
-					</tspan>
-					<tspan x="34.41" y="0">
-						C
-					</tspan>
+					UTC
 				</text>
 				<text
 					transform="translate(220.53 425.98)"
 					fill="#fff"
 					fontSize={30}
+					className="regularSpacing"
 				>
-					<tspan x="0" y="0" letterSpacing=".02em">
-						E
-					</tspan>
-					<tspan x="15.65" y="0">
-						T
-					</tspan>
+					ET
 				</text>
 				<text
 					transform="translate(177.29 162.91)"
 					fill="#939598"
 					fontSize={15.9}
+					className="regularSpacing"
 				>
-					<tspan x="0" y="0">
-						MIN
-					</tspan>
+					MIN
 				</text>
 				<text
 					transform="translate(268.75 162.91)"
 					fill="#939598"
 					fontSize={15.9}
+					className="regularSpacing"
 				>
-					<tspan x="0" y="0">
-						SEC
-					</tspan>
+					SEC
 				</text>
 				<text
 					transform="translate(124.57 291.09)"
 					fill="#939598"
 					fontSize={15.9}
+					className="regularSpacing"
 				>
-					<tspan x="0" y="0">
-						HR/MO
-					</tspan>
+					HR/MO
 				</text>
 				<text
 					transform="translate(216.82 291.09)"
 					fill="#939598"
 					fontSize={15.9}
+					className="regularSpacing"
 				>
-					<tspan x="0" y="0">
-						MIN/DY
-					</tspan>
+					MIN/DY
 				</text>
 				<text
 					transform="translate(307.34 291.78)"
 					fill="#939598"
 					fontSize={15.9}
+					className="regularSpacing"
 				>
-					<tspan x="0" y="0">
-						SEC/Y
-					</tspan>
+					SEC/Y
 				</text>
 				<text
 					transform="translate(181.83 416.51)"
 					fill="#939598"
 					fontSize={15.9}
+					className="regularSpacing"
 				>
-					<tspan x="0" y="0">
-						HR
-					</tspan>
+					HR
 				</text>
 				<text
 					transform="translate(267.67 416.51)"
 					fill="#939598"
 					fontSize={15.9}
+					className="regularSpacing"
 				>
-					<tspan x="0" y="0">
-						MIN
-					</tspan>
+					MIN
 				</text>
 				<text
-					transform="translate(10.53 100.98)"
+					className="regularSpacing"
+					transform="translate(25.53 100.98)"
 					fill="white"
 					fontSize={30}
 				>
-					<tspan x="15.65" y="0">
-						RST
-					</tspan>
+					RST
 				</text>
-				<text transform="translate(0.53 300.98)" fill="white" fontSize={30}>
-					<tspan x="15.65" y="0">
-						DATE
-					</tspan>
+				<text
+					className="regularSpacing"
+					transform="translate(15.53 300.98)"
+					fill="white"
+					fontSize={30}
+				>
+					DATE
 				</text>
-				<text transform="translate(385 100.98)" fill="white" fontSize={30}>
-					<tspan x="15.65" y="0">
-						CHR
-					</tspan>
-				</text>
-				<text transform="translate(385 200.98)" fill="white" fontSize={20}>
-					<tspan x="15.65" y="0">
-						GPS
-					</tspan>
-				</text>
-				<text transform="translate(420 225.98)" fill="white" fontSize={20}>
-					<tspan x="15.65" y="0">
-						INT
-					</tspan>
-				</text>
-				<text transform="translate(410 260.98)" fill="white" fontSize={20}>
-					<tspan x="15.65" y="0">
-						SET
-					</tspan>
-				</text>
-				<text transform="translate(385 200.98)" fill="white" fontSize={20}>
-					<tspan x="15.65" y="0">
-						GPS
-					</tspan>
+				<text
+					className="regularSpacing"
+					transform="translate(400 100.98)"
+					fill="white"
+					fontSize={30}
+				>
+					CHR
 				</text>
 
-				<text transform="translate(385 320.98)" fill="white" fontSize={20}>
-					<tspan x="15.65" y="0">
-						AUTO
-					</tspan>
+				<text
+					className="regularSpacing"
+					transform="translate(435 225.98)"
+					fill="white"
+					fontSize={20}
+				>
+					INT
 				</text>
-				<text transform="translate(420 360.98)" fill="white" fontSize={20}>
-					<tspan x="15.65" y="0">
-						RST
-					</tspan>
+				<text
+					className="regularSpacing"
+					transform="translate(425 260.98)"
+					fill="white"
+					fontSize={20}
+				>
+					SET
+				</text>
+				<text
+					className="regularSpacing"
+					transform="translate(400 200.98)"
+					fill="white"
+					fontSize={20}
+				>
+					GPS
+				</text>
+
+				<text
+					className="regularSpacing"
+					transform="translate(400 320.98)"
+					fill="white"
+					fontSize={20}
+				>
+					AUTO
+				</text>
+				<text
+					className="regularSpacing"
+					transform="translate(435 360.98)"
+					fill="white"
+					fontSize={20}
+				>
+					RST
 				</text>
 				<text
 					className="clock"
