@@ -18,6 +18,15 @@ const Clock = () => {
 
 	const [utcTime, setUtcTime] = useState(new Date());
 
+	const [aircraftOnGround, setAircraftOnGround] = useState(true);
+
+	const [ETDisplayMin, setETDisplayMin] = useState('00');
+	const [ETDisplayHr, setETDisplayHr] = useState('00');
+
+	const handleAircarftToggle = () => {
+		setAircraftOnGround(!aircraftOnGround);
+	};
+
 	useEffect(() => {
 		const interval = setInterval(() => {
 			setUtcTime(new Date());
@@ -39,9 +48,7 @@ const Clock = () => {
 		setTimeDisplaySec(`${secs}`);
 		setElapsedTime(elapsedTime.toString());
 	};
-	useEffect(() => {
-		console.log(ElapsedTime);
-	}, [ElapsedTime]);
+
 	const startClick = () => {
 		if (paused) {
 			setPaused(false);
@@ -71,18 +78,28 @@ const Clock = () => {
 		setTimeDisplaySec('00');
 	};
 	return (
-		<ClockBase
-			handleStartClick={startClick}
-			handleResetClick={resetTimer}
-			handlePauseClick={pauseTimer}
-			CHRMin={timeDisplayMin}
-			CHRSec={timeDisplaySec}
-			UTCHr={padNumber(utcTime.getUTCHours())}
-			UTCMin={padNumber(utcTime.getUTCMinutes())}
-			UTCSec={padNumber(utcTime.getUTCSeconds())}
-			ETMin="00"
-			ETSec="00"
-		/>
+		<div>
+			<ClockBase
+				handleStartClick={startClick}
+				handleResetClick={resetTimer}
+				handlePauseClick={pauseTimer}
+				CHRMin={timeDisplayMin}
+				CHRSec={timeDisplaySec}
+				UTCHr={padNumber(utcTime.getUTCHours())}
+				UTCMin={padNumber(utcTime.getUTCMinutes())}
+				UTCSec={padNumber(utcTime.getUTCSeconds())}
+				ETMin="00"
+				ETSec="00"
+			/>
+			<label style={{ color: 'white' }}>
+				<input
+					type="checkbox"
+					checked={aircraftOnGround}
+					onChange={handleAircarftToggle}
+				/>
+				On Ground
+			</label>
+		</div>
 	);
 };
 
