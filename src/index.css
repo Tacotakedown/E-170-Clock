@@ -18,6 +18,10 @@ body {
 	font-family: 'clockRegular';
 	src: url('./fonts/digitalRegular.ttf');
 }
+@font-face {
+	font-family: 'ouroborosClock';
+	src: url('./fonts/Ouroboros_Clock_Font_Regular.ttf');
+}
 code {
 	font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
 		monospace;

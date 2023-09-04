@@ -55,13 +55,13 @@ export const ClockBase: React.FC<clockBaseProps> = (props) => {
 			>
 				<rect
 					x="67.67"
-					y="27.84"
+					y="27.80"
 					width="340.09"
 					height="417.61"
 					fill="#231f20"
 				/>
 				<path
-					d="m42.4,0h364.07l65.53,66.82v346.51l-60.82,62.96H56.11L0,423.18V44.97L42.4,0Zm49.26,66.39v338.8c0,12.06,9.78,21.84,21.84,21.84h251c12.06,0,21.84-9.78,21.84-21.84V66.39c0-12.06-9.78-21.84-21.84-21.84H113.51c-12.06,0-21.84,9.78-21.84,21.84Z"
+					d="m42.4,0h364.07l65.53,66.82v346.51l-60.82,62.96H56.11L0,423.18V44.97L42.4,0Zm49.26,66.39v338.8c0,12.06,9.78,21.80,21.80,21.80h251c12.06,0,21.80-9.78,21.80-21.80V66.39c0-12.06-9.78-21.80-21.80-21.80H113.51c-12.06,0-21.80,9.78-21.80,21.80Z"
 					fill="#939598"
 					stroke="#231f20"
 					strokeMiterlimit={10}
@@ -217,35 +217,27 @@ export const ClockBase: React.FC<clockBaseProps> = (props) => {
 					transform="translate(236 135.98)"
 					fill="white"
 					textAnchor="middle"
-					fontSize={84}
+					fontSize={80}
 				>
-					{chrMin}
-					<tspan className="RegularFont">:</tspan>
-					{chrSec}
+					{chrMin + ':' + chrSec}
 				</text>
 				<text
 					className="clock"
 					transform="translate(236 265.98)"
 					fill="white"
 					textAnchor="middle"
-					fontSize={84}
+					fontSize={80}
 				>
-					{utcHr}
-					<tspan className="RegularFont">:</tspan>
-					{utcMin}
-					<tspan className="RegularFont">:</tspan>
-					{utcSec}
+					{utcHr + ':' + utcMin + ':' + utcSec}
 				</text>
 				<text
 					className="clock"
 					transform="translate(236 390.98)"
 					fill="white"
 					textAnchor="middle"
-					fontSize={84}
+					fontSize={80}
 				>
-					{ETMin}
-					<tspan className="RegularFont">:</tspan>
-					{ETSec}
+					{ETMin + ':' + ETSec}
 				</text>
 				<circle
 					cx={428}

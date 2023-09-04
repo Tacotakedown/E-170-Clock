@@ -15,13 +15,16 @@
 	font-size: 3vh;
 }
 .clock {
-	font-family: 'clock';
+	font-family: 'ouroborosClock';
+	letter-spacing: 1px;
+	font-size: 77px;
 }
 .chrButton:active {
 	stroke: red;
 }
 .RegularFont {
-	font-family: 'clockRegular' !important;
+	font-family: 'ouroborosClock' !important;
+	letter-spacing: 3px;
 }
 .regularSpacing {
 	letter-spacing: 0px !important;
